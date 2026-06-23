@@ -7,14 +7,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="floating-donate" href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer">Donate</a>
+  <a class="floating-donate" href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="donate">Donate</a>
+  <a class="floating-language" href="#" data-language-trigger="true" data-i18n="navLanguage">Language</a>
   <header class="container">
     <nav class="nav">
-      <div class="logo">Abena • Koda Journey</div>
+      <div class="logo">Abena - Koda Journey</div>
+      <div class="nav-right">
+        <label class="language-label" for="languageSelect" data-i18n="languageLabel">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+          <option value="es">Español</option>
+          <option value="pt">Português</option>
+          <option value="ru">Русский</option>
+          <option value="ar">العربية</option>
+          <option value="hi">हिंदी</option>
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+        </select>
+      </div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#support">Support</a></li>
+        <li><a href="#about" data-i18n="navAbout">About</a></li>
+        <li><a href="#project" data-i18n="navProject">Project</a></li>
+        <li><a href="#support" data-i18n="navSupport">Support</a></li>
       </ul>
     </nav>
   </header>
@@ -22,30 +40,30 @@
   <main class="container">
     <section class="hero">
       <div class="hero-card">
-        <span class="tag">Personal Intro Website</span>
-        <h1>Hi, I'm Abena. I am building something meaningful with Koda.</h1>
-        <p class="lead">
+        <span class="tag" data-i18n="tagline">Personal Intro Website</span>
+        <h1 data-i18n="heroTitle">Hi, I'm Abena. I am building something meaningful with Koda.</h1>
+        <p class="lead" data-i18n="heroLead">
           This website is where I share who I am, what I am creating, and why this project matters to me.
           If you are curious about my journey, you are in the right place.
         </p>
         <div class="actions">
-          <a class="btn btn-primary" href="#project">See the Project</a>
-          <a class="btn btn-light" href="#about">Get to Know Me</a>
+          <a class="btn btn-primary" href="#project" data-i18n="ctaProject">See the Project</a>
+          <a class="btn btn-light" href="#about" data-i18n="ctaAbout">Get to Know Me</a>
         </div>
       </div>
 
       <aside class="hero-side">
-        <h2>Why this page?</h2>
-        <p>
+        <h2 data-i18n="whyTitle">Why this page?</h2>
+        <p data-i18n="whyText">
           I wanted one simple place where anyone can understand the vision behind Koda and connect with me directly.
         </p>
-        <a class="btn btn-light" href="https://github.com" target="_blank" rel="noreferrer">GitHub Profile</a>
+        <a class="btn btn-light" href="https://github.com" target="_blank" rel="noreferrer" data-i18n="githubButton">GitHub Profile</a>
       </aside>
     </section>
 
     <section id="about" class="section-card">
-      <h2>About Me</h2>
-      <p>
+      <h2 data-i18n="aboutTitle">About Me</h2>
+      <p data-i18n="aboutText">
          I’m a 19-year-old developer and designer currently building Koda.
          I’ve always been driven by the challenge of creating tools that actually solve human problems,
          and I'm sharing my entire journey—from the first line of code to the final build—in public.
@@ -55,57 +73,58 @@
     </section>
 
     <section id="project" class="section-card">
-      <h2>About Koda</h2>
-      <p>
+      <h2 data-i18n="projectTitle">About Koda</h2>
+      <p data-i18n="projectText">
        
-        I started building Coda because I was looking for a tool to help 
+       I started building Koda because I was looking for a tool to help 
         me maintain focus and master new skills, but I couldn't 
         find anything that felt right. The apps I found were either 
         too lenient, overly complex, or simply didn't align with the level of discipline I was looking for.
         
         I realized that if I wanted a solution that was truly human and effective, 
-        I would have to build it myself. Coda is my answer to that problem—a tool designed
+        I would have to build it myself. Koda is my answer to that problem-a tool designed
          to help you build habits, stay consistent, and focus on what actually matters.
       </p>
       <div class="three-col">
         <article class="pill">
-          <h3>Vision</h3>
-          <p>To build a discipline-focused environment that bridges the gap 
+          <h3 data-i18n="visionTitle">Vision</h3>
+          <p data-i18n="visionText">To build a discipline-focused environment that bridges the gap 
             between learning and action, making consistent growth accessible for everyone.</p>
         </article>
         <article class="pill">
-          <h3>Current Stage</h3>
-          <p>Currently: Building core logic for the workout and habit-tracking modules.
-            Preparing the deployment pipeline for the initial beta..</p>
+          <h3 data-i18n="stageTitle">Current Stage</h3>
+          <p data-i18n="stageText">Currently: Building core logic for the workout and habit-tracking modules.
+            Preparing the deployment pipeline for the initial beta.</p>
         </article>
         <article class="pill">
-          <h3>What Comes Next</h3>
-          <p>Upcoming: Integrating the UI components, 
+          <h3 data-i18n="nextTitle">What Comes Next</h3>
+          <p data-i18n="nextText">Upcoming: Integrating the UI components, 
             optimizing data flow, and opening sign-ups for the first group of testers.</p>
         </article>
       </div>
     </section>
 
     <section id="support" class="section-card">
-      <h2>Support My Journey</h2>
-      <p>
+      <h2 data-i18n="supportTitle">Support My Journey</h2>
+      <p data-i18n="supportText">
         If you like what I am building and want to support me, you can donate here:
       </p>
       <p>
-        <a class="btn btn-primary" href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer">Buy Me a Coffee</a>
+        <a class="btn btn-primary" href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="coffeeButton">Buy Me a Coffee</a>
       </p>
     </section>
   </main>
 
   <footer>
-    Built with intention by Abena.
+    <span data-i18n="footerText">Built with intention by Abena.</span>
   </footer>
 
   <nav class="mobile-quick-nav" aria-label="Mobile quick navigation">
-    <a href="#about">About</a>
-    <a href="#project">Project</a>
-    <a href="#support">Support</a>
-    <a href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer">Donate</a>
+    <a href="#about" data-i18n="navAbout">About</a>
+    <a href="#project" data-i18n="navProject">Project</a>
+    <a href="#support" data-i18n="navSupport">Support</a>
+    <a href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="donate">Donate</a>
+    <a href="#" id="mobileLanguageButton" data-language-trigger="true" data-i18n="navLanguage">Language</a>
   </nav>
   <script src="script.js"></script>
 </body>

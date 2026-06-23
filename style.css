@@ -64,6 +64,33 @@ header {
   color: var(--primary-dark);
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-label {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.language-select {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.language-select:focus {
+  outline: 2px solid #dfe5ff;
+  border-color: var(--primary);
+}
+
 .hero {
   padding: 40px 0 30px;
   display: grid;
@@ -227,6 +254,25 @@ footer {
   background: var(--primary-dark);
 }
 
+.floating-language {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 40;
+  text-decoration: none;
+  background: #ffffff;
+  color: var(--primary-dark);
+  font-weight: 700;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 16px;
+  box-shadow: var(--shadow);
+}
+
+.floating-language:hover {
+  background: #f3f6ff;
+}
+
 .mobile-quick-nav {
   display: none;
 }
@@ -238,6 +284,11 @@ footer {
 
   header {
     padding-bottom: 6px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .hero {
@@ -258,6 +309,13 @@ footer {
     display: none;
   }
 
+  .floating-language {
+    bottom: 94px;
+    left: 12px;
+    padding: 9px 12px;
+    font-size: 0.85rem;
+  }
+
   .mobile-quick-nav {
     position: fixed;
     bottom: 0;
@@ -265,7 +323,7 @@ footer {
     right: 0;
     z-index: 50;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     background: rgba(255, 255, 255, 0.98);
     border-top: 1px solid var(--border);
     box-shadow: 0 -8px 20px rgba(28, 40, 76, 0.08);
@@ -274,18 +332,28 @@ footer {
   .mobile-quick-nav a {
     text-decoration: none;
     color: var(--text);
-    font-size: 0.86rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-align: center;
     padding: 12px 8px;
   }
 
+  .mobile-quick-nav a:nth-child(4),
   .mobile-quick-nav a:last-child {
     color: var(--primary-dark);
   }
 }
 
 @media (max-width: 520px) {
+  .language-label {
+    display: none;
+  }
+
+  .language-select {
+    font-size: 0.85rem;
+    padding: 7px 9px;
+  }
+
   .actions {
     flex-direction: column;
     align-items: stretch;
