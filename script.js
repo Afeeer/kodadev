@@ -460,6 +460,7 @@ const translations = {
 
 const defaultLang = "en";
 const rtlLanguages = new Set(["ar"]);
+const googleAdsDonationSendTo = "AW-18346792132";
 const languageSelect = document.getElementById("languageSelect");
 const languageTriggers = document.querySelectorAll("[data-language-trigger]");
 
@@ -515,6 +516,28 @@ if (languageSelect && languageTriggers.length > 0) {
     });
   });
 }
+
+const trackDonationClick = () => {
+  if (typeof window.gtag !== "function") return;
+
+  // Always log a custom event for reporting.
+  window.gtag("event", "donation_click", {
+    event_category: "engagement",
+    event_label: "buy_me_a_coffee"
+  });
+
+  // Add the full send_to value from Google Ads conversion setup:
+  // Example: AW-18346792132/AbCdEFghijkLMnoPq
+  if (googleAdsDonationSendTo.includes("/")) {
+    window.gtag("event", "conversion", {
+      send_to: googleAdsDonationSendTo
+    });
+  }
+};
+
+document.querySelectorAll('[data-track="donation-click"]').forEach((link) => {
+  link.addEventListener("click", trackDonationClick);
+});
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", (event) => {
