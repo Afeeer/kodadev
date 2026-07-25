@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abena | Building Koda</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18346792132"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "AW-18346792132");
+  </script>
 </head>
 <body>
-  <a class="floating-donate" href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="donate">Donate</a>
+  <a class="floating-donate" href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="donate" data-track="donation-click">Donate</a>
   <a class="floating-language" href="#" data-language-trigger="true" data-i18n="navLanguage">Language</a>
   <header class="container">
     <nav class="nav">
@@ -110,7 +120,7 @@
         If you like what I am building and want to support me, you can donate here:
       </p>
       <p>
-        <a class="btn btn-primary" href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="coffeeButton">Buy Me a Coffee</a>
+        <a class="btn btn-primary" href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="coffeeButton" data-track="donation-click">Buy Me a Coffee</a>
       </p>
     </section>
   </main>
@@ -123,7 +133,7 @@
     <a href="#about" data-i18n="navAbout">About</a>
     <a href="#project" data-i18n="navProject">Project</a>
     <a href="#support" data-i18n="navSupport">Support</a>
-    <a href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="donate">Donate</a>
+    <a href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="donate" data-track="donation-click">Donate</a>
     <a href="#" id="mobileLanguageButton" data-language-trigger="true" data-i18n="navLanguage">Language</a>
   </nav>
   <script src="script.js"></script>
