@@ -460,7 +460,7 @@ const translations = {
 
 const defaultLang = "en";
 const rtlLanguages = new Set(["ar"]);
-const googleAdsDonationSendTo = "AW-18346792132";
+const googleAdsDonationSendTo = "AW-18346792132/G8pDCL2_ktYcEMSpt6xE";
 const languageSelect = document.getElementById("languageSelect");
 const languageTriggers = document.querySelectorAll("[data-language-trigger]");
 
@@ -518,13 +518,17 @@ if (languageSelect && languageTriggers.length > 0) {
 }
 
 const trackDonationClick = () => {
-  if (typeof window.gtag !== "function") return;
+  if (typeof window.gtag !== "function") {
+    console.warn("Google tag is not available yet.");
+    return;
+  }
 
   // Always log a custom event for reporting.
   window.gtag("event", "donation_click", {
     event_category: "engagement",
     event_label: "buy_me_a_coffee"
   });
+  console.info("Donation click event sent to gtag.");
 
   // Add the full send_to value from Google Ads conversion setup:
   // Example: AW-18346792132/AbCdEFghijkLMnoPq
@@ -532,6 +536,11 @@ const trackDonationClick = () => {
     window.gtag("event", "conversion", {
       send_to: googleAdsDonationSendTo
     });
+    console.info("Google Ads conversion sent:", googleAdsDonationSendTo);
+  } else {
+    console.info(
+      "Conversion label missing. Add full send_to value to track conversions."
+    );
   }
 };
 
