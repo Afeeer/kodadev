@@ -411,10 +411,7 @@ footer {
   }
 
   .floating-language {
-    bottom: 94px;
-    left: 12px;
-    padding: 9px 12px;
-    font-size: 0.85rem;
+    display: none;
   }
 
   .mobile-quick-nav {
