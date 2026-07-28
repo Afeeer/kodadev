@@ -4,6 +4,8 @@ const translations = {
     languageLabel: "Language",
     navAbout: "About",
     navProject: "Project",
+    navShowroom: "Showroom",
+    navShowroomShort: "App",
     navSupport: "Support",
     navLanguage: "Language",
     donate: "Donate",
@@ -12,6 +14,7 @@ const translations = {
     heroLead:
       "This website is where I share who I am, what I am creating, and why this project matters to me. If you are curious about my journey, you are in the right place.",
     ctaProject: "See the Project",
+    ctaShowroom: "See the App",
     ctaAbout: "Get to Know Me",
     whyTitle: "Why this page?",
     whyText:
@@ -32,6 +35,8 @@ const translations = {
     nextTitle: "What Comes Next",
     nextText:
       "Upcoming: Integrating the UI components, optimizing data flow, and opening sign-ups for the first group of testers.",
+    showroomTitle: "App Showroom",
+    showroomLead: "A look at how Koda can look after release.",
     supportTitle: "Support My Journey",
     supportText:
       "If you like what I am building and want to support me, you can donate here:",
@@ -559,4 +564,66 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     event.preventDefault();
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
+});
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.getElementById("lightboxClose");
+const lightboxPrev = document.getElementById("lightboxPrev");
+const lightboxNext = document.getElementById("lightboxNext");
+const showroomThumbs = Array.from(document.querySelectorAll(".showroom-thumb"));
+let lightboxIndex = 0;
+
+const openLightbox = (index) => {
+  if (!lightbox || !lightboxImage || !showroomThumbs.length) return;
+  lightboxIndex = index;
+  const thumb = showroomThumbs[lightboxIndex];
+  const src = thumb.getAttribute("data-full");
+  const img = thumb.querySelector("img");
+  lightboxImage.src = src;
+  lightboxImage.alt = img ? img.alt : "Koda app preview";
+  lightbox.hidden = false;
+  document.body.style.overflow = "hidden";
+};
+
+const closeLightbox = () => {
+  if (!lightbox) return;
+  lightbox.hidden = true;
+  document.body.style.overflow = "";
+};
+
+const shiftLightbox = (step) => {
+  if (!showroomThumbs.length) return;
+  lightboxIndex =
+    (lightboxIndex + step + showroomThumbs.length) % showroomThumbs.length;
+  openLightbox(lightboxIndex);
+};
+
+showroomThumbs.forEach((thumb, index) => {
+  thumb.addEventListener("click", () => openLightbox(index));
+});
+
+if (lightboxClose) {
+  lightboxClose.addEventListener("click", closeLightbox);
+}
+
+if (lightboxPrev) {
+  lightboxPrev.addEventListener("click", () => shiftLightbox(-1));
+}
+
+if (lightboxNext) {
+  lightboxNext.addEventListener("click", () => shiftLightbox(1));
+}
+
+if (lightbox) {
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (!lightbox || lightbox.hidden) return;
+  if (event.key === "Escape") closeLightbox();
+  if (event.key === "ArrowLeft") shiftLightbox(-1);
+  if (event.key === "ArrowRight") shiftLightbox(1);
 });

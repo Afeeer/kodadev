@@ -42,6 +42,7 @@
       <ul class="nav-links">
         <li><a href="#about" data-i18n="navAbout">About</a></li>
         <li><a href="#project" data-i18n="navProject">Project</a></li>
+        <li><a href="#showroom" data-i18n="navShowroom">Showroom</a></li>
         <li><a href="#support" data-i18n="navSupport">Support</a></li>
       </ul>
     </nav>
@@ -57,7 +58,7 @@
           If you are curious about my journey, you are in the right place.
         </p>
         <div class="actions">
-          <a class="btn btn-primary" href="#project" data-i18n="ctaProject">See the Project</a>
+          <a class="btn btn-primary" href="#showroom" data-i18n="ctaShowroom">See the App</a>
           <a class="btn btn-light" href="#about" data-i18n="ctaAbout">Get to Know Me</a>
         </div>
       </div>
@@ -114,6 +115,49 @@
       </div>
     </section>
 
+    <section id="showroom" class="section-card showroom">
+      <h2 data-i18n="showroomTitle">App Showroom</h2>
+      <p data-i18n="showroomLead">
+        A look at how Koda can look after release.
+      </p>
+
+      <div class="showroom-gallery" id="showroomGallery">
+        <button type="button" class="showroom-thumb" data-full="images/showroom/01-onboarding-who.png">
+          <img src="images/showroom/01-onboarding-who.png" alt="Koda onboarding" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="images/showroom/02-main-domain.png">
+          <img src="images/showroom/02-main-domain.png" alt="Koda main domain" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="images/showroom/03-subcategory-wellness.png">
+          <img src="images/showroom/03-subcategory-wellness.png" alt="Koda wellness" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="images/showroom/04-subcategory-skills.png">
+          <img src="images/showroom/04-subcategory-skills.png" alt="Koda skills" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="images/showroom/06-home-dashboard.png">
+          <img src="images/showroom/06-home-dashboard.png" alt="Koda home" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="images/showroom/07-profile-analysis.png">
+          <img src="images/showroom/07-profile-analysis.png" alt="Koda profile" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="images/showroom/08-learning-path.png">
+          <img src="images/showroom/08-learning-path.png" alt="Koda learning" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="images/showroom/09-lesson-video.png">
+          <img src="images/showroom/09-lesson-video.png" alt="Koda lesson" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="images/showroom/11-koda-coach.png">
+          <img src="images/showroom/11-koda-coach.png" alt="Koda coach chat" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="images/showroom/12-diary.png">
+          <img src="images/showroom/12-diary.png" alt="Koda diary" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="images/showroom/13-from-koda.png">
+          <img src="images/showroom/13-from-koda.png" alt="Koda notes" />
+        </button>
+      </div>
+    </section>
+
     <section id="support" class="section-card">
       <h2 data-i18n="supportTitle">Support My Journey</h2>
       <p data-i18n="supportText">
@@ -131,11 +175,19 @@
 
   <nav class="mobile-quick-nav" aria-label="Mobile quick navigation">
     <a href="#about" data-i18n="navAbout">About</a>
-    <a href="#project" data-i18n="navProject">Project</a>
+    <a href="#showroom" data-i18n="navShowroomShort">App</a>
     <a href="#support" data-i18n="navSupport">Support</a>
     <a href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="donate" data-track="donation-click">Donate</a>
     <a href="#" id="mobileLanguageButton" data-language-trigger="true" data-i18n="navLanguage">Language</a>
   </nav>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <img id="lightboxImage" src="" alt="Koda app preview" />
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
