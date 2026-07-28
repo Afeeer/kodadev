@@ -25,16 +25,16 @@ const translations = {
       "I'm a 19-year-old developer and designer currently building Koda. I've always been driven by the challenge of creating tools that actually solve human problems, and I'm sharing my entire journey from the first line of code to the final build in public.",
     projectTitle: "About Koda",
     projectText:
-      "I started building Koda because I was looking for a tool to help me maintain focus and master new skills, but I could not find anything that felt right. The apps I found were either too lenient, overly complex, or simply did not align with the level of discipline I was looking for. I realized that if I wanted a solution that was truly human and effective, I would have to build it myself. Koda is my answer to that problem: a tool designed to help you build habits, stay consistent, and focus on what actually matters.",
-    visionTitle: "Vision",
-    visionText:
-      "To build a discipline-focused environment that bridges the gap between learning and action, making consistent growth accessible for everyone.",
-    stageTitle: "Current Stage",
-    stageText:
-      "Currently: Building core logic for the workout and habit-tracking modules. Preparing the deployment pipeline for the initial beta.",
-    nextTitle: "What Comes Next",
-    nextText:
-      "Upcoming: Integrating the UI components, optimizing data flow, and opening sign-ups for the first group of testers.",
+      "Koda is built to keep you focused, help you learn with real understanding, and push your routines forward — like a coach that stays with you from study time to workout time.",
+    feature1Title: "The Accountability & Focus Coach",
+    feature1Text:
+      "It takes your custom schedule from onboarding, tracks your routines, and automatically locks distracting apps like YouTube and TikTok during your designated study or exercise blocks. If you try to override a block, it acts like a real coach by holding you accountable and prompting you to reflect on why you're stopping.",
+    feature2Title: "The Autonomous Tutor",
+    feature2Text:
+      "When you are working through subjects like arithmetic and fractions, Koda automatically structures your learning path, talks to you like a dedicated mentor instead of giving generic quiz prompts, and opens up a back-and-forth chat if you make a mistake so you actually understand the concept.",
+    feature3Title: "The Fitness & Productivity Guide",
+    feature3Text:
+      "Beyond academics, Koda steps into your physical routines to keep you moving and pushing forward, acting as an uncompromising partner that covers every major angle of your personal development — from the desk to the workout space.",
     showroomTitle: "App Showroom",
     showroomLead: "A look at how Koda can look after release.",
     supportTitle: "Support My Journey",
@@ -65,16 +65,8 @@ const translations = {
       "Ich bin 19 Jahre alt, Entwicklerin und Designerin und arbeite aktuell an Koda. Mich motiviert es, Werkzeuge zu bauen, die echte menschliche Probleme lösen. Meine gesamte Reise teile ich öffentlich.",
     projectTitle: "Über Koda",
     projectText:
-      "Ich habe Koda gestartet, weil ich ein Tool gesucht habe, das mir hilft, fokussiert zu bleiben und neue Fähigkeiten zu meistern. Nichts hat sich richtig angefühlt. Viele Apps waren zu nachsichtig, zu komplex oder passten nicht zu dem Maß an Disziplin, das ich gesucht habe.",
-    visionTitle: "Vision",
-    visionText:
-      "Eine disziplinorientierte Umgebung bauen, die die Lücke zwischen Lernen und Handeln schließt und kontinuierliches Wachstum für alle zugänglich macht.",
-    stageTitle: "Aktueller Stand",
-    stageText:
-      "Aktuell: Aufbau der Kernlogik für die Workout- und Habit-Tracking-Module. Außerdem bereite ich die Deployment-Pipeline für die erste Beta vor.",
-    nextTitle: "Was als Nächstes kommt",
-    nextText:
-      "Als Nächstes: UI-Komponenten integrieren, den Datenfluss optimieren und die Anmeldung für die erste Testergruppe öffnen.",
+      "Koda hilft dir, fokussiert zu bleiben, mit echtem Verstaendnis zu lernen und deine Routinen voranzutreiben — wie ein Coach von Lernzeit bis Training.",
+
     supportTitle: "Unterstütze meine Reise",
     supportText:
       "Wenn dir gefällt, was ich baue, kannst du meine Reise hier unterstützen:",
@@ -103,16 +95,8 @@ const translations = {
       "Je suis développeuse et designeuse de 19 ans, et je construis actuellement Koda. Je suis motivée par la création d'outils qui résolvent de vrais problèmes humains, et je partage mon parcours en public.",
     projectTitle: "À propos de Koda",
     projectText:
-      "J'ai commencé Koda parce que je cherchais un outil pour rester concentrée et progresser, sans trouver ce qui me convenait vraiment. Les applications étaient trop souples, trop complexes, ou pas assez alignées avec le niveau de discipline que je recherchais.",
-    visionTitle: "Vision",
-    visionText:
-      "Construire un environnement centré sur la discipline, qui relie apprentissage et action pour rendre la progression continue accessible à tous.",
-    stageTitle: "Étape actuelle",
-    stageText:
-      "Actuellement : je développe la logique principale des modules entraînement et suivi d'habitudes, et je prépare le pipeline de déploiement pour la première bêta.",
-    nextTitle: "Et ensuite",
-    nextText:
-      "Prochainement : intégration des composants UI, optimisation du flux de données, et ouverture des inscriptions pour le premier groupe de testeurs.",
+      "Koda est concu pour garder le focus, apprendre avec une vraie comprehension, et faire avancer tes routines — comme un coach de l'etude a l'entrainement.",
+
     supportTitle: "Soutenir mon parcours",
     supportText:
       "Si vous aimez ce que je construis et voulez soutenir mon parcours, vous pouvez donner ici :",
@@ -141,16 +125,8 @@ const translations = {
       "Sono una sviluppatrice e designer di 19 anni, attualmente al lavoro su Koda. Amo costruire strumenti che risolvono problemi reali e condivido pubblicamente il mio percorso.",
     projectTitle: "Su Koda",
     projectText:
-      "Ho iniziato Koda perché cercavo uno strumento che mi aiutasse a restare concentrata e a sviluppare nuove competenze, ma non trovavo nulla di davvero adatto. Le app che provavo erano troppo permissive, troppo complesse o poco allineate al livello di disciplina che cercavo.",
-    visionTitle: "Visione",
-    visionText:
-      "Costruire un ambiente orientato alla disciplina che colleghi apprendimento e azione, rendendo la crescita costante accessibile a tutti.",
-    stageTitle: "Fase attuale",
-    stageText:
-      "Attualmente: sviluppo della logica principale dei moduli allenamento e tracciamento abitudini. Preparazione della pipeline di deploy per la beta iniziale.",
-    nextTitle: "Prossimi passi",
-    nextText:
-      "In arrivo: integrazione dei componenti UI, ottimizzazione del flusso dati e apertura delle iscrizioni al primo gruppo di tester.",
+      "Koda ti aiuta a restare concentrata, imparare con vera comprensione e portare avanti le tue routine — come un coach dallo studio all'allenamento.",
+
     supportTitle: "Supporta il mio percorso",
     supportText:
       "Se ti piace cio che sto costruendo e vuoi supportarmi, puoi donare qui:",
@@ -179,16 +155,8 @@ const translations = {
       "Soy desarrolladora y diseñadora de 19 años, y actualmente estoy creando Koda. Me apasiona construir herramientas que resuelvan problemas humanos reales y compartir mi camino en público.",
     projectTitle: "Sobre Koda",
     projectText:
-      "Empecé Koda porque buscaba una herramienta para mantener el enfoque y dominar nuevas habilidades, pero no encontré nada que encajara conmigo. Las apps eran demasiado permisivas, demasiado complejas o no estaban alineadas con el nivel de disciplina que buscaba.",
-    visionTitle: "Visión",
-    visionText:
-      "Construir un entorno centrado en la disciplina que una aprendizaje y acción, haciendo el crecimiento constante accesible para todos.",
-    stageTitle: "Etapa actual",
-    stageText:
-      "Actualmente: construyendo la lógica central de los módulos de entrenamiento y hábitos. Preparando el pipeline de despliegue para la beta inicial.",
-    nextTitle: "Lo que viene",
-    nextText:
-      "Próximamente: integrar componentes de UI, optimizar el flujo de datos y abrir registros para el primer grupo de testers.",
+      "Koda esta hecho para mantenerte enfocado, aprender con comprension real y avanzar en tus rutinas — como un coach del estudio al entrenamiento.",
+
     supportTitle: "Apoya mi camino",
     supportText:
       "Si te gusta lo que estoy construyendo y quieres apoyar mi camino, puedes donar aquí:",
@@ -217,16 +185,8 @@ const translations = {
       "Sou desenvolvedora e designer de 19 anos, atualmente construindo o Koda. Sou movida pelo desafio de criar ferramentas que resolvam problemas humanos reais e compartilho minha jornada em público.",
     projectTitle: "Sobre o Koda",
     projectText:
-      "Eu comecei o Koda porque estava procurando uma ferramenta para manter foco e dominar novas habilidades, mas não encontrei nada certo para mim. Os apps eram permissivos demais, complexos demais ou não tinham o nível de disciplina que eu queria.",
-    visionTitle: "Visão",
-    visionText:
-      "Construir um ambiente focado em disciplina que conecte aprendizado e ação, tornando o crescimento consistente acessível para todos.",
-    stageTitle: "Estágio atual",
-    stageText:
-      "Atualmente: construindo a lógica principal dos módulos de treino e hábitos. Preparando o pipeline de deploy para o beta inicial.",
-    nextTitle: "Próximos passos",
-    nextText:
-      "Em breve: integrar componentes de UI, otimizar o fluxo de dados e abrir inscrições para o primeiro grupo de testers.",
+      "Koda foi feito para manter o foco, aprender com compreensao real e empurrar suas rotinas — como um coach do estudo ao treino.",
+
     supportTitle: "Apoie minha jornada",
     supportText:
       "Se você gosta do que estou construindo e quer apoiar minha jornada, pode doar aqui:",
@@ -255,16 +215,8 @@ const translations = {
       "Мне 19 лет, я разработчица и дизайнер, и сейчас я строю Koda. Меня вдохновляет создание инструментов, которые решают реальные человеческие проблемы, и я делюсь этим путем публично.",
     projectTitle: "О Koda",
     projectText:
-      "Я начала создавать Koda, потому что искала инструмент для фокуса и развития навыков, но не нашла подходящего решения. Приложения были слишком мягкими, слишком сложными или не соответствовали уровню дисциплины, который я искала.",
-    visionTitle: "Видение",
-    visionText:
-      "Создать среду, ориентированную на дисциплину, которая соединяет обучение и действие, чтобы устойчивый рост был доступен каждому.",
-    stageTitle: "Текущий этап",
-    stageText:
-      "Сейчас: разрабатываю основную логику модулей тренировок и трекинга привычек. Также подготавливаю pipeline развертывания для первой бета-версии.",
-    nextTitle: "Что дальше",
-    nextText:
-      "Дальше: интеграция UI-компонентов, оптимизация потока данных и запуск регистрации для первой группы тестировщиков.",
+      "Koda pomogaet ostavatsya v fokuse, uchitsya s realnym ponimaniem i dvigat rutiny vpered — kak coach ot ucheby do trenirovki.",
+
     supportTitle: "Поддержите мой путь",
     supportText:
       "Если вам нравится то, что я создаю, и вы хотите поддержать мой путь, вы можете сделать донат здесь:",
@@ -293,16 +245,8 @@ const translations = {
       "أنا مطورة ومصممة عمري 19 سنة وأعمل حاليا على Koda. أحب بناء أدوات تحل مشاكل بشرية حقيقية وأشارك رحلتي علنا.",
     projectTitle: "عن Koda",
     projectText:
-      "بدأت بناء Koda لأنني كنت أبحث عن أداة تساعدني على التركيز وتطوير المهارات، لكنني لم أجد ما يناسبني. التطبيقات التي وجدتها كانت متساهلة جدا أو معقدة جدا أو لا تناسب مستوى الانضباط الذي أريده.",
-    visionTitle: "الرؤية",
-    visionText:
-      "بناء بيئة تركز على الانضباط وتربط بين التعلم والعمل، وتجعل النمو المستمر متاحا للجميع.",
-    stageTitle: "المرحلة الحالية",
-    stageText:
-      "حاليا: بناء المنطق الأساسي لوحدات التمارين وتتبع العادات. تجهيز خط النشر للإصدار التجريبي الأول.",
-    nextTitle: "ما القادم",
-    nextText:
-      "قريبا: دمج مكونات الواجهة، تحسين تدفق البيانات، وفتح التسجيل للمجموعة الأولى من المختبرين.",
+      "Koda يساعدك على التركيز والتعلّم بفهم حقيقي ودفع روتينك إلى الأمام — مثل مدرب من الدراسة إلى التمرين.",
+
     supportTitle: "ادعم رحلتي",
     supportText:
       "إذا أعجبك ما أبنيه وتريد دعمي، يمكنك التبرع هنا:",
@@ -331,16 +275,8 @@ const translations = {
       "मैं 19 साल की डेवलपर और डिजाइनर हूं और अभी Koda बना रही हूं। मुझे ऐसे टूल बनाना पसंद है जो लोगों की असली समस्याएं हल करें, और मैं अपनी पूरी यात्रा पब्लिक में शेयर कर रही हूं।",
     projectTitle: "Koda के बारे में",
     projectText:
-      "मैंने Koda बनाना इसलिए शुरू किया क्योंकि मुझे फोकस और नई स्किल्स में मदद करने वाला टूल चाहिए था, लेकिन मुझे सही कुछ नहीं मिला। जो ऐप्स मिले वे या तो बहुत ढीले थे, बहुत जटिल थे, या उस अनुशासन स्तर से मेल नहीं खाते थे जिसकी मुझे जरूरत थी।",
-    visionTitle: "विजन",
-    visionText:
-      "ऐसा अनुशासन-केंद्रित माहौल बनाना जो सीखने और कार्रवाई के बीच की दूरी कम करे, और लगातार विकास को सभी के लिए सुलभ बनाए।",
-    stageTitle: "वर्तमान चरण",
-    stageText:
-      "अभी: वर्कआउट और हैबिट-ट्रैकिंग मॉड्यूल की मुख्य लॉजिक बना रही हूं। शुरुआती बीटा के लिए डिप्लॉयमेंट पाइपलाइन तैयार कर रही हूं।",
-    nextTitle: "आगे क्या",
-    nextText:
-      "आगे: UI कंपोनेंट्स इंटीग्रेट करना, डेटा फ्लो ऑप्टिमाइज़ करना और पहले टेस्टर्स के लिए साइन-अप खोलना।",
+      "Koda aapko focused rakhne, asli samajh ke saath seekhne, aur routines aage badhane mein madad karta hai — study se workout tak ek coach ki tarah.",
+
     supportTitle: "मेरी यात्रा को सपोर्ट करें",
     supportText:
       "अगर आपको मेरा काम पसंद है और आप मेरी यात्रा को सपोर्ट करना चाहते हैं, तो यहां डोनेट करें:",
@@ -369,16 +305,8 @@ const translations = {
       "我是一名 19 岁的开发者和设计师，目前正在构建 Koda。我热衷于创造真正解决人类问题的工具，并公开分享整个成长过程。",
     projectTitle: "关于 Koda",
     projectText:
-      "我开始构建 Koda，是因为我想要一个能帮助我保持专注、掌握新技能的工具，但一直找不到真正合适的产品。很多应用要么太宽松、要么太复杂、要么不符合我想要的自律程度。",
-    visionTitle: "愿景",
-    visionText:
-      "打造一个以自律为核心的环境，连接学习与行动，让持续成长对每个人都可及。",
-    stageTitle: "当前阶段",
-    stageText:
-      "目前：正在构建锻炼与习惯追踪模块的核心逻辑，并准备首个 Beta 版本的部署流程。",
-    nextTitle: "下一步",
-    nextText:
-      "接下来：集成 UI 组件、优化数据流，并开放第一批测试者报名。",
+      "Koda 帮助你保持专注、真正理解所学，并推进日常习惯——像一位从学习到锻炼全程陪伴的教练。",
+
     supportTitle: "支持我的旅程",
     supportText:
       "如果你喜欢我正在做的事情，并愿意支持我，可以在这里捐赠：",
@@ -407,16 +335,8 @@ const translations = {
       "私は 19 歳の開発者兼デザイナーで、現在 Koda を開発しています。人の課題を本当に解決するツールを作ることに情熱があり、その過程を公開しています。",
     projectTitle: "Koda について",
     projectText:
-      "集中力を保ち、新しいスキルを身につけるためのツールを探していましたが、しっくり来るものがありませんでした。既存のアプリは甘すぎるか複雑すぎるかで、私が求める規律レベルに合いませんでした。",
-    visionTitle: "ビジョン",
-    visionText:
-      "学習と行動のギャップを埋める、規律重視の環境を作り、継続的な成長を誰でも実現できるようにすることです。",
-    stageTitle: "現在の段階",
-    stageText:
-      "現在：ワークアウトと習慣トラッキング機能のコアロジックを開発中。初回ベータ版のデプロイ準備を進めています。",
-    nextTitle: "次にやること",
-    nextText:
-      "今後：UI コンポーネントの統合、データフロー最適化、最初のテスター募集を開始します。",
+      "Kodaは集中を保ち、本当に理解しながら学び、ルーティンを前に進めるために作られています。勉強からトレーニングまで寄り添うコーチのように。",
+
     supportTitle: "私の挑戦を応援する",
     supportText:
       "私の活動を気に入って応援したい方は、こちらから支援できます：",
@@ -445,16 +365,8 @@ const translations = {
       "저는 19살 개발자이자 디자이너이며 현재 Koda를 만들고 있습니다. 사람들의 실제 문제를 해결하는 도구를 만드는 것을 좋아하고, 그 과정을 공개하고 있어요.",
     projectTitle: "Koda 소개",
     projectText:
-      "집중을 유지하고 새로운 기술을 익히는 데 도움이 되는 도구를 찾다가 Koda를 만들기 시작했습니다. 기존 앱들은 너무 느슨하거나 너무 복잡하거나 제가 원하는 수준의 규율과 맞지 않았습니다.",
-    visionTitle: "비전",
-    visionText:
-      "학습과 실행 사이의 간격을 줄이는 규율 중심 환경을 구축해, 꾸준한 성장을 누구나 누릴 수 있게 하는 것입니다.",
-    stageTitle: "현재 단계",
-    stageText:
-      "현재: 운동 및 습관 추적 모듈의 핵심 로직을 개발 중이며, 첫 베타 배포 파이프라인을 준비하고 있습니다.",
-    nextTitle: "다음 단계",
-    nextText:
-      "다음: UI 컴포넌트 통합, 데이터 흐름 최적화, 첫 테스터 그룹 모집 오픈.",
+      "Koda는 집중을 유지하고, 진짜 이해하며 배우며, 루틴을 앞으로 밀어주는 도구입니다. 공부부터 운동까지 함께하는 코치처럼요.",
+
     supportTitle: "제 여정을 후원해 주세요",
     supportText:
       "제가 만드는 것을 응원하고 싶다면 여기에서 후원할 수 있습니다:",
