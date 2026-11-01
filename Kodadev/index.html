@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abena | Building Koda</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18346792132"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "AW-18346792132");
+  </script>
+</head>
+<body>
+  <a class="floating-donate" href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="donate" data-track="donation-click">Donate</a>
+  <a class="floating-language" href="#" data-language-trigger="true" data-i18n="navLanguage">Language</a>
+  <header class="container">
+    <nav class="nav">
+      <div class="logo">Abena - Koda Journey</div>
+      <div class="nav-right">
+        <label class="language-label" for="languageSelect" data-i18n="languageLabel">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+          <option value="es">Español</option>
+          <option value="pt">Português</option>
+          <option value="ru">Русский</option>
+          <option value="ar">العربية</option>
+          <option value="hi">हिंदी</option>
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+        </select>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="navAbout">About</a></li>
+        <li><a href="#project" data-i18n="navProject">Project</a></li>
+        <li><a href="#showroom" data-i18n="navShowroom">Showroom</a></li>
+        <li><a href="#support" data-i18n="navSupport">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <span class="tag" data-i18n="tagline">Personal Intro Website</span>
+        <h1 data-i18n="heroTitle">Hi, I'm Abena. I am building something meaningful with Koda.</h1>
+        <p class="lead" data-i18n="heroLead">
+          This website is where I share who I am, what I am creating, and why this project matters to me.
+          If you are curious about my journey, you are in the right place.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#showroom" data-i18n="ctaShowroom">See the App</a>
+          <a class="btn btn-light" href="#about" data-i18n="ctaAbout">Get to Know Me</a>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <h2 data-i18n="whyTitle">Why this page?</h2>
+        <p data-i18n="whyText">
+          I wanted one simple place where anyone can understand the vision behind Koda and connect with me directly.
+        </p>
+        <a class="btn btn-light" href="https://github.com" target="_blank" rel="noreferrer" data-i18n="githubButton">GitHub Profile</a>
+      </aside>
+    </section>
+
+    <section id="about" class="section-card">
+      <h2 data-i18n="aboutTitle">About Me</h2>
+      <p data-i18n="aboutText">
+         I’m a 19-year-old developer and designer currently building Koda.
+         I’ve always been driven by the challenge of creating tools that actually solve human problems,
+         and I'm sharing my entire journey—from the first line of code to the final build—in public.
+    
+         
+      </p>
+    </section>
+
+    <section id="project" class="section-card">
+      <h2 data-i18n="projectTitle">About Koda</h2>
+      <p data-i18n="projectText">
+        Koda is built to keep you focused, help you learn with real understanding, and push your routines forward — like a coach that stays with you from study time to workout time.
+      </p>
+      <div class="three-col">
+        <article class="pill">
+          <h3 data-i18n="feature1Title">The Accountability & Focus Coach</h3>
+          <p data-i18n="feature1Text">It takes your custom schedule from onboarding, tracks your routines, and automatically locks distracting apps like YouTube and TikTok during your designated study or exercise blocks. If you try to override a block, it acts like a real coach by holding you accountable and prompting you to reflect on why you're stopping.</p>
+        </article>
+        <article class="pill">
+          <h3 data-i18n="feature2Title">The Autonomous Tutor</h3>
+          <p data-i18n="feature2Text">When you are working through subjects like arithmetic and fractions, Koda automatically structures your learning path, talks to you like a dedicated mentor instead of giving generic quiz prompts, and opens up a back-and-forth chat if you make a mistake so you actually understand the concept.</p>
+        </article>
+        <article class="pill">
+          <h3 data-i18n="feature3Title">The Fitness & Productivity Guide</h3>
+          <p data-i18n="feature3Text">Beyond academics, Koda steps into your physical routines to keep you moving and pushing forward, acting as an uncompromising partner that covers every major angle of your personal development — from the desk to the workout space.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="showroom" class="section-card showroom">
+      <h2 data-i18n="showroomTitle">App Showroom</h2>
+      <p data-i18n="showroomLead">
+        A look at how Koda can look after release.
+      </p>
+
+      <div class="showroom-gallery" id="showroomGallery">
+        <button type="button" class="showroom-thumb" data-full="showroom/01-onboarding-who.jpg">
+          <img src="showroom/01-onboarding-who.jpg" alt="Koda onboarding" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="showroom/02-main-domain.jpg">
+          <img src="showroom/02-main-domain.jpg" alt="Koda main domain" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="showroom/03-learning-path.jpg">
+          <img src="showroom/03-learning-path.jpg" alt="Koda learning path" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="showroom/04-lesson.jpg">
+          <img src="showroom/04-lesson.jpg" alt="Koda lesson" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="showroom/05-koda-coach.jpg">
+          <img src="showroom/05-koda-coach.jpg" alt="Koda coach chat" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="showroom/06-notes.jpg">
+          <img src="showroom/06-notes.jpg" alt="Koda notes" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="showroom/07-focus-timer.jpg">
+          <img src="showroom/07-focus-timer.jpg" alt="Koda focus timer" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="showroom/08-home-workout.jpg">
+          <img src="showroom/08-home-workout.jpg" alt="Koda home workout" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="showroom/09-profile.jpg">
+          <img src="showroom/09-profile.jpg" alt="Koda profile" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="showroom/10-whiteboard.jpg">
+          <img src="showroom/10-whiteboard.jpg" alt="Koda whiteboard" />
+        </button>
+        <button type="button" class="showroom-thumb" data-full="showroom/11-community.jpg">
+          <img src="showroom/11-community.jpg" alt="Koda community" />
+        </button>
+      </div>
+    </section>
+
+    <section id="support" class="section-card">
+      <h2 data-i18n="supportTitle">Support My Journey</h2>
+      <p data-i18n="supportText">
+        If you like what I am building and want to support me, you can donate here:
+      </p>
+      <p>
+        <a class="btn btn-primary" href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="coffeeButton" data-track="donation-click">Buy Me a Coffee</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span data-i18n="footerText">Built with intention by Abena.</span>
+  </footer>
+
+  <nav class="mobile-quick-nav" aria-label="Mobile quick navigation">
+    <a href="#about" data-i18n="navAbout">About</a>
+    <a href="#showroom" data-i18n="navShowroomShort">App</a>
+    <a href="#support" data-i18n="navSupport">Support</a>
+    <a href="https://buymeacoffee.com/abena.aaa" target="_blank" rel="noreferrer" data-i18n="donate" data-track="donation-click">Donate</a>
+    <a href="#" id="mobileLanguageButton" data-language-trigger="true" data-i18n="navLanguage">Language</a>
+  </nav>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <img id="lightboxImage" src="" alt="Koda app preview" />
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
